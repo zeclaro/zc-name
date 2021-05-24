@@ -180,7 +180,7 @@ setup(
     # executes the function `main` from this package when invoked:
     entry_points={  # Optional
         'console_scripts': [
-            'sample=sample:main',
+            'zcname=app:print_full_name',
         ],
     },
 
