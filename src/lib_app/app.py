@@ -1,4 +1,4 @@
-import constants
+from lib_app import constants
 
 from requests import get
 
