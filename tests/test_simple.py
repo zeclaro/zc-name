@@ -3,14 +3,15 @@
 # setup.py that excludes installing the "tests" package
 
 import unittest
-
-from sample.simple import add_one
+import zcname
 
 
 class TestSimple(unittest.TestCase):
 
-    def test_add_one(self):
-        self.assertEqual(add_one(5), 6)
+    def test_get_full_name(self):
+        # self.assertEqual(add_one(5), 6)
+        rest_client = zcname.app.AppRestClient()
+        self.assertIsNotNone(rest_client.get_full_name())
 
 
 if __name__ == '__main__':
