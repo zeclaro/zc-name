@@ -14,3 +14,6 @@ __pycache__/
 
 # pyenv virtual environment
 .python-version
+
+# ./idea directory
+.idea/
